@@ -1,4 +1,4 @@
-timepickerpop
+timepickerpop - working with ui-bootstrap 2.0+
 =============
 
 Forked by an amazing repo
