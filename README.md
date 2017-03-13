@@ -1,6 +1,11 @@
 timepickerpop
 =============
 
-Popup Time Picker Using AngularJS
+Forked by an amazing repo
 
-http://www.mytechtip.com/2014/03/angularjs-timepiker-popup-ui-bootstrap.html
+(Popup Time Picker Using AngularJS
+
+http://www.mytechtip.com/2014/03/angularjs-timepiker-popup-ui-bootstrap.html)
+
+##########
+MODIFIED THE DIRECTIVE TO MAKE IT WORK WITH ui-bootstrap 2.0+
