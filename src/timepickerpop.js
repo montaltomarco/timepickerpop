@@ -89,7 +89,7 @@ angular.module('timepickerPop', [ 'ui.bootstrap' ])
         },
         controller : function($scope, $element) {
           $scope.isOpen = false;
-          
+
           $scope.disabledInt = angular.isUndefined($scope.disabled)? false : $scope.disabled;
 
           $scope.toggle = function() {
@@ -109,17 +109,17 @@ angular.module('timepickerPop', [ 'ui.bootstrap' ])
         		  close: function () {
         			  scope.isOpen = false;
         		  }
-          		  
+
           }
           timepickerState.addPicker(picker);
-          
+
           scope.open = picker.open;
           scope.close = picker.close;
-          
+
           scope.$watch("disabled", function(value) {
             scope.disabledInt = angular.isUndefined(scope.disabled)? false : scope.disabled;
           });
-          
+
           scope.$watch("inputTime", function(value) {
             if (!scope.inputTime) {
               element.addClass('has-error');
@@ -146,7 +146,7 @@ angular.module('timepickerPop', [ 'ui.bootstrap' ])
             + "    <button type='button' ng-disabled='disabledInt' class='btn btn-default ' ng-class=\"{'btn-primary':isOpen}\" data-toggle='dropdown' ng-click='toggle()'> "
             + "        <i class='glyphicon glyphicon-time'></i></button> "
             + "          <div class='dropdown-menu pull-right'> "
-            + "            <timepicker ng-model='inputTime' show-meridian='showMeridian'></timepicker> "
+            + "            <div uib-timepicker ng-model='inputTime' show-meridian='showMeridian'></uib-timepicker></div> "
             + "           </div> " + "  </div>"
       };
 });
